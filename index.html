@@ -11,119 +11,180 @@
 
 
 <div class="container">
-  <div class="logo">
-    <img src="images/logoB.png" width="50" height="50">
-  </div>
-  <div class="box">
+    <div class="logo">
+      <img src="images/logoB.png" width="50" height="50">
+    </div>
+    <div class="box"></div>
     <div>
       <h2 class="title"> Checkout Form</h2>
     </div>
     <div class="text">
       <span class="text"> Below is an example form built entirely Bootstrap form  control. Each required form group has a</br>validation state that can be triggered by attempting to submit he form without completing it.</span>
     </div>
-  </div>
 
-<div class="row">
-  <div class="col-md-7">
-    <h4 class="mb-3 pt-5">Billing address</h4>
-    <div class="row g-3">
-      <div class="col-sm-6">
-        <label for="firstName" class="form-label">First Name</label>
-        <input type="text" class="form-control" id="firstName">
+
+    <div class="row">
+      <div class="col-md-7">
+      <h4 class="mb-3 pt-5">Billing address</h4>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName">
+          </div>
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastNameName">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" class="form-control" id="email" placeholder="you@email.com">
+          </div>
+          <div class="col-12">
+            <label for="address" class="form-label">Adress</label>
+            <input type="text" class="form-control" id="address" placeholder="1234 main st">
+          </div>
+          <div class="col-12">
+            <label for="address2" class="form-label">Adress 2</label>
+            <input type="text" class="form-control" id="address2" placeholder="apartement or suit">
+          </div>
+          <div class="col-md-5">
+            <label for="country" class="form-label">Country</label>
+            <input type="text" class="form-control" id="country" placeholder="Choose...">
+          </div>
+          <div class="col-md-4">
+            <label for="state" class="form-label">State</label>
+            <input type="text" class="form-control" id="country" placeholder="Choose...">
+          </div>
+          <div class="col-md-3">
+            <label for="zip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="Choose...">
+          </div>
+            <hr class="border border-black my-4">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Shippind address is the same as my billing address</label>
+          </div>
+          <div class=" form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Save this information for next time</label>
+          </div>
+            <hr class="border border-black my-4">
+            <h4 class="mb-3">Payment</h4>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              credit card
+            </label>
+           </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Debit card
+            </label>
+          </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Paypal
+          </label>
+        </div>
+        <div class="row g-3 pt-3">
+        <div class="col-sm-6">
+          <label for="nameCard" class="form-label">Name Card</label>
+          <input type="text" class="form-control" id="nameCard">
+        </div>
+        <div class="col-sm-6">
+          <label for="creditCardnumber" class="form-label">Cradit card number</label>
+          <input type="text" class="form-control" id="creditCardnumber">
+        </div>
+        </div>
+        <div class="row g-3 pt-3">
+        <div class="col-sm-3">
+          <label for="expiration" class="form-label">Expiration</label>
+          <input type="text" class="form-control" id="expiration"></div>
+          <div class="col-sm-3">
+            <label for="cvv" class="form-label">CVV</label>
+            <input type="text" class="form-control" id="cvv">
+          </div>
+        </div>
+
+         <hr class="border border-black my-4">
+        <div class="d-grid pt-3">
+        <button class="btn btn-primary" type="button">Continue to Checkout</button>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <p class="text-primary">Your cart</p>
+              <span class="badge text-bg-primary rounded-pill">2</span>
+            </h4>
+            <ul class="list-group">
+
+              <li class="list-group-item d-flex justify-content-between" >
+                <div class="productName">Product Name
+                  <small class="textBrief">Brief descitpion</small>
+                </div>
+                <small class="money">$12</small>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between" >
+                <div class="productName">Second Product
+                  <small class="textBrief">Brief descitpion</small>
+                </div>
+                <small class="money">$8</small>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between" >
+                <div class="productName">Third Product
+                  <small class="textBrief">Brief descitpion</small>
+                </div>
+                <small class="money">$5</small>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between" >
+                <div class="ProName text-success">Promo Code
+                  <small class="textBrief">EXEMPLE CODE</small>
+                </div>
+                <small class="money">-$5</small>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between" >
+                <div class="name">Total USD
+                  <small class="textBrief">$20</small>
+                </div>
+                <small class="money">-$5</small>
+              </li>
+            </ul>
+
+            <ul class="list-group pt-3">
+              <li class="list-group-item d-flex justify-content-between">
+                <div class="form-floating sm-4">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="">
+                  <label for="floatingInput">Promo Code</label>
+                </div>
+                <button type="button" class="btn btn-secondary">REDEEM</button>
+
+              </li>
+            </ul>
+
+
+
+
+          </div>
+        </div>
+
       </div>
-      <div class="col-sm-6">
-        <label for="lastName" class="form-label">Last Name</label>
-        <input type="text" class="form-control" id="lastNameName">
-      </div>
-      <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1">@</span>
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-      </div>
-      <div class="col-12">
-        <label for="email" class="form-label">Email</label>
-        <input type="text" class="form-control" id="email" placeholder="you@email.com">
-      </div>
-      <div class="col-12">
-        <label for="address" class="form-label">Adress</label>
-        <input type="text" class="form-control" id="address" placeholder="1234 main st">
-      </div>
-      <div class="col-12">
-        <label for="address2" class="form-label">Adress 2</label>
-        <input type="text" class="form-control" id="address2" placeholder="apartement or suit">
-      </div>
-      <div class="col-md-5">
-        <label for="country" class="form-label">Country</label>
-        <input type="text" class="form-control" id="country" placeholder="Choose...">
-      </div>
-      <div class="col-md-4">
-        <label for="state" class="form-label">State</label>
-        <input type="text" class="form-control" id="country" placeholder="Choose...">
-      </div>
-      <div class="col-md-3">
-        <label for="zip" class="form-label">Zip</label>
-        <input type="text" class="form-control" id="zip" placeholder="Choose...">
-      </div>
-      <div <hr4 class="border border-black"</hr4> </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Shippind address is the same as my billing address</label>
-      </div>
-      <div class=" form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Save this information for next time</label>
-      </div>
-    <div <hr4 class="border border-black"</hr4> </div>
-      <h4 class="mb-3">Payment</h4>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-      <label class="form-check-label" for="flexRadioDefault2">
-        credit card
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-      <label class="form-check-label" for="flexRadioDefault1">
-      Debit card
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-      <label class="form-check-label" for="flexRadioDefault1">
-       Paypal
-      </label>
-    </div>
-    <div class="row g-3 pt-3">
-      <div class="col-sm-6">
-        <label for="firstName" class="form-label">First Name</label>
-        <input type="text" class="form-control" id="firstName">
-      </div>
-      <div class="col-sm-6">
-        <label for="lastName" class="form-label">Last Name</label>
-        <input type="text" class="form-control" id="lastNameName">
-      </div>
-    </div>
-    <div class="row g-3 pt-3">
-      <div class="col-sm-3">
-        <label for="expiration" class="form-label">Expiration</label>
-        <input type="text" class="form-control" id="expiration">
-      </div>
-      <div class="col-sm-3">
-        <label for="cvv" class="form-label">CVV</label>
-        <input type="text" class="form-control" id="cvv">
-      </div>
-      <div <hr4 class="border border-black"</hr4> </div>
-    <div class="d-grid pt-3">
-      <button class="btn btn-primary" type="button">Continue to Checkout</button>
-    </div>
-  <div class="row">
-    <div class="col-md-5">
-      <h4 class="d-flex justify-content-between align-items-center mb-3">
-        <p class="text-primary">Your cart</p>
-      </h4>
     </div>
   </div>
 </div>
+
+
 
 
 
